@@ -7,7 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('artists');
+  this.route('artists', function() {
+    this.route('singleArtist', {path: ':id'});
+  });
 });
 
 export default Router;
