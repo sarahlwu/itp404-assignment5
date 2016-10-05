@@ -1,1 +1,12 @@
-{{yield}}
+{{song.title}}
+
+{{#if isExpensive}}
+  $ {{song.price}}
+{{else}}
+  $$ {{song.price}}
+{{/if}}
+
+{{#if isPopular}}
+  **THIS SONG IS POPULAR**
+{{/if}}
+{{song.playCount}}

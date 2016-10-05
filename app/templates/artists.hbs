@@ -2,7 +2,7 @@
 
 {{#each model as |artist|}}
   <li>
-    {{#link-to 'artists'}}{{artist.name}}{{/link-to}}
+    {{#link-to 'artists.singleArtist' artist.id}}{{artist.name}}{{/link-to}}
   </li>
 {{/each}}
 
