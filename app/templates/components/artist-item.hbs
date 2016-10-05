@@ -1,12 +1,16 @@
-{{song.title}}
+<li>
+  {{song.title}}
 
+<br>
 {{#if isExpensive}}
   $ {{song.price}}
 {{else}}
   $$ {{song.price}}
 {{/if}}
 
+<br>
+Play Count: {{song.playCount}}
 {{#if isPopular}}
-  **THIS SONG IS POPULAR**
+  <img src="https://s-media-cache-ak0.pinimg.com/originals/f8/83/cd/f883cd3dc5b2be7b90095aa87141de4e.gif" alt="Fire" height="25" width="25">
 {{/if}}
-{{song.playCount}}
+</li>
